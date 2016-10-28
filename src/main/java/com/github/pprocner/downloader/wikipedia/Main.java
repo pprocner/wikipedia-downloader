@@ -1,4 +1,4 @@
-package org.github.pprocner.downloader.wikipedia;
+package com.github.pprocner.downloader.wikipedia;
 
 import org.apache.commons.io.FileUtils;
 import org.apache.http.impl.client.CloseableHttpClient;

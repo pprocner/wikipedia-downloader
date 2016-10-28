@@ -1,4 +1,4 @@
-package org.github.pprocner.downloader.wikipedia;
+package com.github.pprocner.downloader.wikipedia;
 
 public class WikipediaServiceException extends RuntimeException {
 

@@ -28,7 +28,7 @@ dependencies {
 
 jar {
     manifest {
-        attributes 'Main-Class': 'org.github.pprocner.downloader.wikipedia.Main'
+        attributes 'Main-Class': 'com.github.pprocner.downloader.wikipedia.Main'
     }
 }
 

@@ -1,4 +1,4 @@
-package org.github.pprocner.downloader.wikipedia;
+package com.github.pprocner.downloader.wikipedia;
 
 import org.apache.commons.io.IOUtils;
 import org.apache.http.Header;
