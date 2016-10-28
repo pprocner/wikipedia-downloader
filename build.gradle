@@ -1,4 +1,4 @@
-group 'org.github.pprocner'
+group 'com.github.pprocner'
 version '1.0'
 
 buildscript {
