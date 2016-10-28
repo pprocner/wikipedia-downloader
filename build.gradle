@@ -1,0 +1,38 @@
+group 'org.github.pprocner'
+version '1.0'
+
+buildscript {
+    repositories {
+        jcenter()
+    }
+    dependencies {
+        classpath 'com.github.jengelman.gradle.plugins:shadow:1.2.3'
+    }
+}
+
+apply plugin: 'java'
+apply plugin: 'com.github.johnrengelman.shadow'
+
+sourceCompatibility = 1.8
+
+repositories {
+    mavenCentral()
+}
+
+dependencies {
+    compile group: 'commons-io', name: 'commons-io', version: '2.5'
+    compile group: 'org.apache.httpcomponents', name: 'httpclient', version: '4.5.2'
+    compile group: 'org.apache.logging.log4j', name: 'log4j-jcl', version: '2.7'
+    compile group: 'org.apache.logging.log4j', name: 'log4j-core', version: '2.7'
+}
+
+jar {
+    manifest {
+        attributes 'Main-Class': 'org.github.pprocner.downloader.wikipedia.Main'
+    }
+}
+
+shadowJar {
+    classifier = null
+    version = null
+}
